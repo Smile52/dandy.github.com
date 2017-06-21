@@ -1,0 +1,483 @@
+body
+{
+    height: 100%;
+    max-height: 100%;
+    font-family: "Hiragino Sans GB","Microsoft YaHei","微软雅黑",Georgia,tahoma,arial,simsun,"宋体";
+    font-size: 2.0rem;
+    line-height: 1.6em;
+    color: #3A4145;
+}
+
+html, body
+{
+    height: 100%;
+}
+
+
+.site-head
+{
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: #fff;
+    background: #303538 no-repeat center center;
+    background-size: cover;
+}
+
+.site-head h1
+{
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.site-head .subtitle
+{
+    font-size: 24px;
+}
+
+.vertical
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.content
+{
+    max-width:768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:20px;
+    word-break:break-all;
+}
+
+.passbox
+{
+    text-align: center;
+}
+
+.pad40
+{
+    padding:40px;
+}
+
+.ngn
+{
+    /*padding:0px!important;*/
+    bottom: 0px;
+}
+
+.passinput
+{
+    max-width: 300px;
+}
+
+.shadow-content
+{
+    display: none;
+}
+
+.action-bar
+{
+    position: fixed;
+    top:20px;
+    right:20px;
+    width:100px;
+    height:100px;
+    font-size: 12px;
+    text-align: right;
+}
+
+.action-bar img
+{
+    cursor: pointer;
+}
+
+.action-bar a,.editor-box .top a
+{
+    color:white;
+}
+
+.editor-box .top
+{
+    background:#303538 no-repeat center center;
+    padding:20px;
+}
+
+.editor-box .top .title
+{
+    font-size: 18px;
+    line-height: 20px;
+    color:white;
+}
+
+.editor-box .top .action
+{
+    text-align: right;
+}
+
+.editor-box .top .action a:hover
+{
+    color:#eee;
+}
+
+.editor-box .settings
+{
+    background-color: #f4f4f4;
+    padding:20px;
+}
+
+.editor-box .editor,.editor-box .preview
+{
+    padding:20px;
+}
+
+.editor-box .editor
+{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    border-right: 1px dashed #eee;
+}
+
+.editor-box .preview
+{
+    border: 0px;
+    width: 100%;
+    height: 100%;
+    border-right:1px dashed #eee;
+    font-size: 14px;
+    padding:10px;
+    overflow-y: scroll;
+}
+
+.editor-box .earea
+{
+    height:100%;
+}
+
+.editor-box *
+{
+  outline: none;
+}
+
+.editor-box
+{
+    clear:both;
+    position: absolute;
+    top:0px;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.side_header,.main_header{
+    height:68px;
+}
+
+.header_bg{
+    background:url(../image/header_bg.png) repeat-x ;
+}
+
+.side_header{
+    background:#4f827c;
+}
+.side_body{
+    background:#f2f2f2;
+}
+.side_body .ctrl{
+    padding:30px;
+    text-align:center;
+}
+
+.side_body .ctrl .btn{
+    padding:5px 15px;
+}
+.main_header h3{
+    color:#fff;
+    font-size:32px;
+}
+
+
+.side_body .side_line{
+    border-bottom:1px solid  #c9c9c9 ;
+}
+
+.side_body .setting{
+    padding:25px;
+}
+
+.side_body .setting h3{
+    margin:0px;
+}
+
+.mt20{
+    margin-top:20px;
+}
+
+.mt10{
+    margin-top:10px;
+}
+
+.mb16{
+    margin-bottom: 16px;
+}
+.mb43{
+    margin-bottom: 43px;
+}
+.w92{
+    width: 92px;
+}
+
+.password{
+  margin: 1.6em 0;
+  position: relative;
+  overflow: hidden;
+  padding: 55px 60px;
+  border: #edece4 3px dashed;
+  width: 100%;
+  cursor:pointer;
+  height: auto;
+  text-align: center;
+  color: #aaa9a2;
+  background: #F9F8F5;
+}
+
+.password a
+{
+	text-decoration:underline;
+}
+
+.password_border{
+  margin: 1.6em 0;
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  border: #edece4 3px dashed;
+  width: 100%;
+  height: auto;
+  /*
+  color: #aaa9a2;
+  background: #F9F8F5;
+  */
+}
+
+.modal-body {
+  padding: 15px 37px !important;
+}
+
+.modal-footer {
+  padding: 34px 37px !important;
+  text-align: left !important;
+}
+
+.modal-footer .btn{
+    padding: 6px 23px;
+}
+
+.error{
+    color:#c9302c;
+}
+.password_body{
+    padding:30px 50px!important;
+}
+
+.udl{
+    text-decoration: underline;
+}
+
+.gray{
+    color: gray;
+}
+
+.help{
+    margin-top: 24px;
+}
+.help p{
+    color: gray;
+}
+.qr_invalid {
+    width: 184px;
+    height: 184px;
+    max-width: 100%;
+    text-align: center;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: -2px;
+    left: 65px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    padding-top: 50px;
+    line-height: 200%;
+}
+.tip{
+    margin-top: 10px;
+    color: #000;
+    font-size: 24px;
+    text-align: left;
+}
+
+.yue a
+{
+   color:#428bca;
+}
+
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        margin-top:150px!important;
+    }
+}
+
+.main_header h3 img{
+    position:relative;
+    top:-3px;
+    cursor:pointer;
+}
+
+.resume_admin .col-md-3,
+.resume_admin .col-md-9{
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    transition:all 1s;
+
+}
+.resume_admin.side_close .col-md-3{
+    margin-left:-25%;
+}
+
+
+.resume_admin.side_close .col-md-9{
+    width:100%;
+    padding-left:30px;
+}
+
+
+
+
+
+
+
+/*
+
+.editor-box
+{
+    clear:both;
+    position: absolute;
+    top:0px;
+    height:100%;
+    width:100%;
+    background:#303538 no-repeat center center;
+    overflow: hidden;
+}
+
+.editor-box .title
+{
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0px;
+    padding: 20px;
+    color:white;
+    font-weight: lighter;
+    display: block;
+    margin-right: 20px;
+}
+
+.editor-box .done
+{
+    float:right;
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.editor-box .row
+{
+    clear:both;
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color:white;
+    min-height: 600px;
+}
+
+.editor-box *
+{
+  outline: none;
+}
+
+
+
+.editor-box .row .editor
+{
+    width:50%;
+    height: 90%;
+    float: left;
+}
+
+.editor-box .row .editor textarea
+{
+    border: 0px;
+    width: 100%;
+    height: 100%;
+    border-right:1px dashed #eee;
+    font-size: 14px;
+    padding:10px;
+    overflow-y: scroll;
+}
+
+.editor-box .row .preview
+{
+    float: right;
+    padding:10px;
+    width:45%;
+    font-size: 14px;
+    height: 90%;
+    overflow-y: scroll;
+
+}
+
+*/
+
+
+
+
+
+/*
+.CodeMirror-lines,.rendered-markdown{
+    max-height:600px;
+    overflow:auto;
+}
+
+*/
+
+/*
+ * 滚动条
+ */
+.CodeMirror {
+}
+/**
+ * 预览区域的滚动条
+ */
+.entry-preview-content{
+    overflow:auto;
+}
+
+.weixin_share_modal_padding{
+    padding-left:50px!important;
+}
+
+.ngn{
+    z-index:9999;
+}
+
+
+
+.save_ctrl{
+    margin-top:15px;
+    margin-right:15px;
+}
