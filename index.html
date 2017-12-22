@@ -3,12 +3,9 @@
 <html ng-app="deerResume" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no,target-densitydpi=medium-dpi">
+
   <!--<base href="/">--><base href=".">
-  <!--[if lt IE 10]>
-    <script type="text/javascript">
-      location.href = 'http://www.jobdeer.com/ie_error.html';
-    </script>
-  <![endif]-->
+  
   <title >姚九龙求职Android个人简历</title>
   <link href="http://dandy.deercv.com/image/browser.png" rel="shortcut icon">
   <link rel="stylesheet" href="./ResumeOnLineYaoJiulong/normalize.css">
@@ -73,10 +70,10 @@
 
 <ul>
 <li>姚九龙/男/1994 </li>
-<li>本科/长沙理工大学 </li>
+<li>最高学历：本科/长沙理工大学 </li>
 <li>开发经验：3年</li>
-<li>技术博客：http://blog.csdn.net/qq272708698</li>
-<li>GitHub: https://github.com/Smile52 </li>
+<li>技术博客：<a href="http://blog.csdn.net/qq272708698">http://blog.csdn.net/qq272708698</a> </li>
+<li>GitHub: <a href="https://github.com/Smile52"> https://github.com/Smile52</a> </li>
 <li>期望职位：Android开发工程师</li>
 <li>座右铭：在其位，谋其政，行其事，尽其责</li>
 </ul>
@@ -85,7 +82,7 @@
 
 <h1 id="">工作经历</h1>
 <h2 id="20157t20164">深圳市珍乐科技 （ 2015年7月 ~ 2016年4月 ）</h2>
-<h2 id="20157t20164">深圳市领歌科技有限公司 （ 2016年6月 ~ 2017年7月 ）</h2>
+<h2 id="20157t20164">深圳市领歌科技有限公司 （ 2016年6月 ~ 2017年9月 ）</h2>
 
 <h3 id="20157201603">Leagoo Lanucher(2016.10-2017.03)</h3>
 
@@ -98,9 +95,14 @@
 
 <p>本项目为系统天气应用,主要是面向于国外市场，通过使用百度定位获取到当地经纬度，然后根据经纬度去获取天气数据，数据提供商为国外的AccuWeather，对Retrofit进行二次封装来来实现网络请求。城市管理功能涉及到添加删除，所以通过重写FragmentStatePagerAdapter来实现动态添加和删除，天气更新是通过监听用户解锁屏幕事件来判断是否超过间隔，每种天气都有特定的动画效果，下雨，下雪，冰雹是通过自定义view，使用canvas来循环绘制雨滴和雪花。</p>
 
-<h3 id="20157201604">联想智能农业管理系统（客户端开发）</h3>
+<h3 id="20157201604">小姨妹</h3>
 
-<p>本项目为湖南省职业技能大赛移动应用开发赛项的项目，而我是负责二次开发，也是我第一个大型项目，当然我在此比赛中获得了一等奖。客户端通过网络请求服务器数据，实时显示从农业生态圈里面各种传感器的值，然后通过自定义View (Canvas + Handler)实时更新折线图，给用户更直观的感受。主要界面是通过ViewPager+Fragment来实现滑动标签页。用户通过客户端里面的一些按钮可以控制农业生态圈里面的一些硬件（灯光，风扇，水泵），主要通过发送JSON数据到服务器，由服务器去控制那些硬件。系统实现了预警功能，通过后台开启一个Service，实时监控服务器回传的值，用户可以自定义某个传感器的阀值，超过预前设置的阀值会给用户状态栏提醒。</p>
+<p>首先这是是一款关于女性月经期管理的产品，能够精准预测记录和提醒月经、排卵、黄体期等。
+本项目整体采用MVP架构，实现了视图层与业务层的分离，大大降低了耦合性，让整个程序更加健壮。
+本人主要负责项目架构搭建，网络请求框架，商城模块功能。
+1，因为采用MVP架构，首先对view层和present层进行抽象封装，view层主要封装一些公共功能（Toast,ProgressDialog...）
+presenter主要封装网络请求初始化，因为本项目的网络请求是采用的Retrofit，以及token加入。
+2，商城模块中，商品详情是采用混合式开发（Android+HTML5），因为考虑到商品详情经常会改变以及布局不统一，所以采用混合式开发是最佳选择。</p>
 
 <h3 id="20157201604">柚飞约车</h3>
 
@@ -158,9 +160,9 @@
 
 <hr>
 
-<h1 id="">自我评价</h1
-  本人大学为软件工程专业，从事编程工作3年，目前主要方向为Android，对web后端有过学习，喜欢专研新技术，善于总结平时的工作内容，记录日常开发过程遇到的一些bug，和解决方法。
-<p></p>
+<h1 id="">自我评价</h1>
+
+<p>本人喜欢折腾新技术，经常闲逛于github，stackoverflow等技术网站，熟悉整体软件开发流程，阅读过不少代码优化书籍，是个代码洁癖患者。不只是专注于Android开发，也会研究一些服务器后台的技术，以及数据库，网络等方面，熟悉一些设计模式的思想以及响应式编程和依赖注入，能够独立搭建一套Android框架。</p>
 
 <h1 id="">学习经历</h1>
 
@@ -184,20 +186,6 @@
 <!--SCRIPTS-->
 <!--SCRIPTS END-->
 </div>
-<!-- Piwik -->
-<!-- <script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//s.kuaijianli.com/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', 11]);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//s.kuaijianli.com/piwik.php?idsite=11" style="border:0;" alt="" /></p></noscript> -->
-<!-- End Piwik Code -->
+
 
 <div class="modal fade" id="jobdeer-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"></div></div></div></body></html>
